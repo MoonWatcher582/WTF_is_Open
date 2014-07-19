@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<p> {{ url }} </p>
+
+		{% for r in places %}
+			<h2> {{ r.name }} </h2>
+			<img src={{ r.icon }} />
+			<p> {{ r.vicinity }} </p>
+		{% endfor %}	
+	</body>
+</html>
+
