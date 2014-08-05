@@ -1,10 +1,36 @@
 <!DOCTYPE HTML>
 <html>
+	<head>
+		<title> What the Fuck is Open? </title>
+		<script language="javascript">
+			function handler(select) {
+				var selInd = select.selectedIndex;
+				var selOpt = select.options[selInd];
+				var text = document.getElementById('radius');
+				
+				if(selInd == 1){
+					//alert("The selected option is " + selOpt.value);
+					text.style.visibility="visible";
+				}else{
+					//alert("The selected option is " + selOpt.value);
+					text.style.visibility="hidden";
+				}
+			}
+		</script>
+		<link rel="stylesheet" href="static/style.css" />
+	</head>
 	<body>
-		<h1>HELLO WORLD</h1>
+		<h1> WHAT THE FUCK IS OPEN? </h1>
 		<br />
-		<form action="/isOpen">
-			<input type="submit" value="Change Page" />
+		<form id="form1" action="/isOpen">
+			<label> Would you like to sort by prominence or distance? </label><br />
+			<select name="option1" onchange="handler(this)">
+				<option value=""> Please Select </option>
+				<option value="prominence"> Prominence </option>
+				<option value="distance"> Distance </option>
+			</select><br />
+			<input type='text' name='radius' id='radius' value='0'/><br />
+			<input type='submit' id='btn' value='Submit'/>
 		</form>
 	</body>
 </html>
