@@ -1,8 +1,18 @@
-#form1{
-	display: block;
+h1{
+	margin-left: auto;
+	margin-right: auto;	
 }
 
-#radius{
-	position: relative;
+#form1{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#lat{
+	visibility: hidden;
+}
+
+#long{
 	visibility: hidden;
 }
