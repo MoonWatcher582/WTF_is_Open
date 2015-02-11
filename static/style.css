@@ -1,6 +1,22 @@
+body {
+	background:
+	radial-gradient(circle at 100% 5%, transparent 20%, rgba(155, 155, 155,.3) 21%, rgba(155, 155, 155,.3) 34%, transparent 35%, transparent),
+	radial-gradient(circle at 0% 50%, transparent 20%, rgba(155, 155, 155,.3) 21%, rgba(155, 155, 155,.3) 34%, transparent 35%, transparent) 0 -50px; 
+	background-color: aliceblue;
+	background-size: 750px 1000px;
+	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
+	-webkit-animation: background-transition 8s linear 7.5s, animated-background 11.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
+}
+
+* {
+	border: dashed 1px;
+	text: green;
+}
+
 h1{
 	margin-left: auto;
-	margin-right: auto;	
+	margin-right: auto;
+	font-color: yellow;
 }
 
 #form1{
@@ -15,4 +31,27 @@ h1{
 
 #long{
 	visibility: hidden;
+}
+
+@-webkit-keyframes animated-background {
+	from {
+		background position: 0 50;
+	}
+	50% {
+		background-position: 6.25% 0;
+	}
+	to {
+		background-position: 6.25% 11%;
+	}
+}
+@-moz-keyframes animated-background {
+	from {
+		background position: 0 50;
+	}
+	50% {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 6.25% 11%;
+	}
 }
