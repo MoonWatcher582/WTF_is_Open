@@ -8,15 +8,19 @@ body {
 	-webkit-animation: background-transition 8s linear 7.5s, animated-background 11.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
 }
 
-* {
-	border: dashed 1px;
-	text: green;
-}
-
 h1{
-	margin-left: auto;
-	margin-right: auto;
-	font-color: yellow;
+	margin-left: 300px;
+	padding: 10px;
+	position: relative;
+	float: center;
+	color: white;
+	background-color: rgba(155, 155, 155, .3);
+	/* background: -webkit-radial-gradient(skyblue, skyblue 50%, cadetblue); */
+	display: inline-block;
+	clear: both;
+	font-family: Comic Sans MS;
+	font-size: 48px;
+	border: 15px groove aliceblue;
 }
 
 #form1{
