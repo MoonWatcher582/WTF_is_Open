@@ -5,7 +5,7 @@ body {
 	background-color: aliceblue;
 	background-size: 900px 1200px;
 	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
-	-webkit-animation: background-transition 8s linear 7.5s, animated-background 11.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
+	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 11.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
 }
 
 * {
@@ -25,21 +25,22 @@ h1{
 	font-size: 48px;
 	border: 17px inset ghostwhite;
 	border-radius: 500px;
-	-webkit-animation: h1-text-color 4s linear alternate infinite;
+	-webkit-animation: h1-text-color 2s steps(40,end) alternate infinite;
 }
 
 #labelname {
 	position: relative;
+	font-weight: bold;
 	padding-top: 100px;
 	margin-top:200px;
-	margin-left: 320px;
+	margin-left: 325px;
 	font-size:32px;
 }
 select {
 	margin: 50px;
-	margin-left: 550px;
+	margin-left: 560px;
 	border: 100px solid #111;
-	border-radius: 15px;
+	border-radius: 25px;
 	background: transparent;
 	width: 235px;
 	height: 60px;
@@ -49,11 +50,27 @@ select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	background-color: rgba(155, 155, 155, .3);
 	background: url(/img/middle_finger.png) 96% / 15% no-repeat #eee;
 }
 select:hover {
 	border: 7px inset #eee;
 	color: aliceblue;
+	background: #ccc;
+}
+input {
+	margin-left:650px;
+	border:7px inset #ccc;
+	border-radius:15px;
+	font-size: 17px;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	background-color: rgba(155, 155, 155, .3);
+	appearance:none;
+}
+input:hover {
+	border: 7px inset #eee;
+	color:aliceblue;
 	background: #ccc;
 }
 #form1{
@@ -75,10 +92,10 @@ select:hover {
 		background position: 0 50;
 }
 50% {
-	background-position: 6.25% 0;
+	background-position: 0 0;
 }
 to {
-	background-position: 6.25% 11%;
+	background-position: 16.25% 11%;
 }
 }
 @-moz-keyframes animated-background {
@@ -89,7 +106,7 @@ to {
 	background-position: 0 0;
 }
 to {
-	background-position: 6.25% 11%;
+	background-position: 6.25% 81%;
 }
 }
 @-webkit-keyframes h1-text-color {
