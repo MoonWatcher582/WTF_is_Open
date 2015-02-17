@@ -3,9 +3,9 @@ body {
 	radial-gradient(circle at 100% 5%, transparent 20%, rgba(155, 155, 155,.3) 21%, rgba(155, 155, 155,.3) 34%, transparent 35%, transparent),
 	radial-gradient(circle at 0% 50%, transparent 20%, rgba(155, 155, 155,.3) 21%, rgba(155, 155, 155,.3) 34%, transparent 35%, transparent) 0 -50px; 
 	background-color: aliceblue;
-	background-size: 900px 1200px;
+	background-size: 750px 1000px;
 	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
-	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 11.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
+	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 10.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
 }
 
 * {
@@ -13,7 +13,7 @@ body {
 }
 
 h1{
-	margin-left: 350px;
+	margin-left: 400px;
 	padding: 10px;
 	position: relative;
 	float: center;
@@ -25,7 +25,10 @@ h1{
 	font-size: 48px;
 	border: 17px inset ghostwhite;
 	border-radius: 500px;
-	-webkit-animation: h1-text-color 2s steps(40,end) alternate infinite;
+}
+
+#fuck {
+-webkit-animation: h1-text-color 1s steps(40,end) alternate infinite;
 }
 
 #labelname {
@@ -33,12 +36,12 @@ h1{
 	font-weight: bold;
 	padding-top: 100px;
 	margin-top:200px;
-	margin-left: 325px;
+	margin-left: 375px;
 	font-size:32px;
 }
 select {
-	margin: 50px;
-	margin-left: 560px;
+	margin: 40px;
+	margin-left: 615px;
 	border: 100px solid #111;
 	border-radius: 25px;
 	background: transparent;
@@ -50,6 +53,7 @@ select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	text-align: center;
 	background-color: rgba(155, 155, 155, .3);
 	background: url(/img/middle_finger.png) 96% / 15% no-repeat #eee;
 }
@@ -59,19 +63,22 @@ select:hover {
 	background: #ccc;
 }
 input {
-	margin-left:650px;
+	margin-left:690px;
 	border:7px inset #ccc;
 	border-radius:15px;
 	font-size: 17px;
 	-webkit-appearance:none;
 	-moz-appearance:none;
-	background-color: rgba(155, 155, 155, .3);
+	background-color: rgba(185, 185, 185, 1);
 	appearance:none;
 }
 input:hover {
 	border: 7px inset #eee;
 	color:aliceblue;
 	background: #ccc;
+}
+input:onclick {
+
 }
 #form1{
 	display: block;
@@ -101,13 +108,16 @@ to {
 @-moz-keyframes animated-background {
 	from {
 		background position: 0 50;
-}
-50% {
-	background-position: 0 0;
-}
-to {
-	background-position: 6.25% 81%;
-}
+	}
+	50% {
+		background-position: 0 0;
+	}
+	75% {
+		background-position: 6.25% 81%;
+	}
+	to {
+		background-position: 6.255 100%;
+	}
 }
 @-webkit-keyframes h1-text-color {
 	from {
