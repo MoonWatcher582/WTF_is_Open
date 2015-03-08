@@ -28,6 +28,7 @@ h1{
 }
 
 #fuck {
+-moz-animation: h1-text-color 1s steps(40,end) alternate infinite;
 -webkit-animation: h1-text-color 1s steps(40,end) alternate infinite;
 }
 
@@ -128,4 +129,14 @@ to {
 	color:black;
 	border: 17px inset slategray;	
 }
+}
+@-moz-keyframes h1-text-color {
+	from {
+		color:white;
+		border: 17px inset ghostwhite;
+	}
+to {
+	color:black;
+	border: 17px inset slategray;	
+	}
 }
