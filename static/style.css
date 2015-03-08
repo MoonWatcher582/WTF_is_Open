@@ -81,10 +81,12 @@ select:hover {
 
 #menu {
 	text-align: center;
+	padding: auto;
+	margin: auto;
 }
 
 #radius {
-	width: 100px;
+	width: 50px;
 }
 
 input {
@@ -103,7 +105,9 @@ input:hover {
 	background: #ccc;
 }
 input:active {
-	border: 70px inset #fff;
+	border: 7px inset #bbb;
+	color: black;
+	background: #ddd;
 }
 
 #form1{
