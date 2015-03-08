@@ -12,23 +12,41 @@ body {
 	font-family: Futura Condensed Medium, Futura, Comic Sans MS, fantasy;
 }
 
+.flexcontainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.flexchild {
+	text-align: center;
+	margin: 25px 0;
+}
+
 h1{
-	margin-left: 400px;
+	margin: 0 auto;
 	padding: 10px;
-	position: relative;
+	/*position: relative;*/
 	float: center;
 	/*color: white;*/
 	background-color: rgba(155, 155, 155, .3);
 	/* background: -webkit-radial-gradient(skyblue, skyblue 50%, cadetblue); */
-	display: inline-block;
+	/* display: inline-block;*/
 	clear: both;
 	font-size: 48px;
 	border: 17px inset ghostwhite;
 	border-radius: 500px;
 }
 
+#btn {
+	display: block;
+	text-align: center;
+}
+
 #fuck {
--moz-animation: h1-text-color 1s steps(40,end) alternate infinite;
 -webkit-animation: h1-text-color 1s steps(40,end) alternate infinite;
 }
 
@@ -36,21 +54,18 @@ h1{
 	position: relative;
 	font-weight: bold;
 	padding-top: 100px;
-	margin-top:200px;
-	margin-left: 375px;
+	margin: auto;
 	font-size:32px;
 }
 select {
-	margin: 40px;
-	margin-left: 615px;
-	border: 100px solid #111;
-	border-radius: 25px;
+	margin: auto;
+	border-radius: 250px;
 	background: transparent;
 	width: 235px;
 	height: 60px;
 	padding: 5px 5px 5px 15px;
 	font-size: 20px;
-	border: 7px inset #ccc;
+	border: 9px inset #ccc;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -59,12 +74,21 @@ select {
 	background: url(/img/middle_finger.png) 96% / 15% no-repeat #eee;
 }
 select:hover {
-	border: 7px inset #eee;
+	border: 10px inset #eee;
 	color: aliceblue;
 	background: #ccc;
 }
+
+#menu {
+	text-align: center;
+}
+
+#radius {
+	width: 100px;
+}
+
 input {
-	margin-left:690px;
+	margin: auto;
 	border:7px inset #ccc;
 	border-radius:15px;
 	font-size: 17px;
@@ -78,13 +102,13 @@ input:hover {
 	color:aliceblue;
 	background: #ccc;
 }
-input:onclick {
-
+input:active {
+	border: 70px inset #fff;
 }
+
 #form1{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	display:block;
+	margin: auto;
 }
 
 #lat{
@@ -129,14 +153,4 @@ to {
 	color:black;
 	border: 17px inset slategray;	
 }
-}
-@-moz-keyframes h1-text-color {
-	from {
-		color:white;
-		border: 17px inset ghostwhite;
-	}
-to {
-	color:black;
-	border: 17px inset slategray;	
-	}
 }
