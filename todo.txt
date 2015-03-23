@@ -1,0 +1,7 @@
+1) Rebuild webpage, may allow prominence/distance option 
+2) Rebuild geolocation
+	2a) JavaScript must edit page/send altert if geolocation fails
+3) Make api call via JavaScript
+4) Use data to build a list of places/addresses(vicinities)
+5) Use data's lat/long to include a map of all data + directions option for each entry (maybe make each vicinity a hyperlink to a google map direction from your long/lat to location's long/lat??)
+6) Remember to check for pagetokens for more data
