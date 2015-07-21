@@ -1,15 +1,19 @@
 body {
-	background:
-	radial-gradient(circle at 100% 5%, transparent 20%, rgba(155, 155, 155,.3) 21%, rgba(155, 155, 155,.3) 34%, transparent 35%, transparent),
-	radial-gradient(circle at 0% 50%, transparent 20%, rgba(155, 155, 155,.3) 21%, rgba(155, 155, 155,.3) 34%, transparent 35%, transparent) 0 -50px; 
-	background-color: aliceblue;
-	background-size: 750px 1000px;
-	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
+	background-color: #080808;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 350px 350px, 350px 350px, 250px 250px, 150px 150px, 199px 199px; 
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, 70px 50px;
+	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s ease alternate infinite, shake 2s ease 3.5s alternate 2;
 	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 10.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
 }
-
-* {
-	font-family: Futura Condensed Medium, Futura, Comic Sans MS, fantasy;
+body {
+	font-family: Futura Condensed Medium, Futura, Comic Sans MS, Helvetica, Arial, sans-serif;
+	color: silver;
 }
 
 .flexcontainer {
@@ -48,7 +52,7 @@ h1{
 }
 
 #fuck {
--webkit-animation: h1-text-color 1s steps(40,end) alternate infinite;
+	-webkit-animation: h1-text-color 1.5s ease alternate infinite;
 }
 
 #labelname {
@@ -127,13 +131,13 @@ input:active {
 @-webkit-keyframes animated-background {
 	from {
 		background position: 0 50;
-}
-50% {
-	background-position: 0 0;
-}
-to {
-	background-position: 16.25% 11%;
-}
+	}
+	50% {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 16.25% 11%;
+	}
 }
 @-moz-keyframes animated-background {
 	from {
@@ -153,9 +157,9 @@ to {
 	from {
 		color:white;
 		border: 17px inset ghostwhite;
-}
-to {
-	color:black;
-	border: 17px inset slategray;	
-}
+	}
+	to {
+		color:black;
+		border: 17px inset slategray;	
+	}
 }

@@ -5,4 +5,3 @@ Implemented using Google Places API.
 
 First page, featuring a sort-by option (distance, prominence), a distance input, and a location finder to be added.
 Map/Direction functionality to be added.
-CSS to be added.
