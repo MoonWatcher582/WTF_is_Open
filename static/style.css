@@ -10,10 +10,9 @@ body {
 	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, 70px 50px;
 	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s ease alternate infinite, shake 2s ease 3.5s alternate 2;
 	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 10.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
-}
-body {
 	font-family: Futura Condensed Medium, Futura, Comic Sans MS, Helvetica, Arial, sans-serif;
 	color: silver;
+	text-align: center;
 }
 
 .flexcontainer {
@@ -23,10 +22,10 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
+	text-align: center;
 }
 
 .flexchild {
-	text-align: center;
 	margin: 25px 0;
 }
 
