@@ -1,4 +1,5 @@
 body {
+	text-align: center;
 	background-color: #080808;
 	background-image:
 	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
@@ -12,7 +13,6 @@ body {
 	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 10.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
 	font-family: Futura Condensed Medium, Futura, Comic Sans MS, Helvetica, Arial, sans-serif;
 	color: silver;
-	text-align: center;
 }
 
 .flexcontainer {
@@ -22,10 +22,10 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
-	text-align: center;
 }
 
 .flexchild {
+	text-align: center;
 	margin: 25px 0;
 }
 
@@ -42,12 +42,6 @@ h1{
 	font-size: 48px;
 	border: 17px inset ghostwhite;
 	border-radius: 500px;
-}
-
-#btn {
-	display: block;
-	text-align: center;
-	padding: 3px 5px;
 }
 
 #fuck {
@@ -74,13 +68,14 @@ select {
 	-moz-appearance: none;
 	appearance: none;
 	text-align: center;
-	background-color: rgba(155, 155, 155, .3);
-	background: url(/img/middle_finger.png) 96% / 15% no-repeat #eee;
+	background-color: rgba(185, 185, 185, 1); 
+}
+body {
 }
 select:hover {
-	border: 10px inset #eee;
+	border: .5em inset #eee;
 	color: aliceblue;
-	background: #ccc;
+	background: #bbb;
 }
 
 #menu {
@@ -95,8 +90,9 @@ select:hover {
 
 input {
 	margin: auto;
+	padding: .5em;
 	border:7px inset #ccc;
-	border-radius:15px;
+	border-radius:150px;
 	font-size: 17px;
 	-webkit-appearance:none;
 	-moz-appearance:none;
