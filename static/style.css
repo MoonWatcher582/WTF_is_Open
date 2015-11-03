@@ -1,26 +1,43 @@
 body {
-	background:
-	radial-gradient(circle at 100% 5%, transparent 20%, rgba(155, 155, 155,.3) 21%, rgba(155, 155, 155,.3) 34%, transparent 35%, transparent),
-	radial-gradient(circle at 0% 50%, transparent 20%, rgba(155, 155, 155,.3) 21%, rgba(155, 155, 155,.3) 34%, transparent 35%, transparent) 0 -50px; 
-	background-color: aliceblue;
-	background-size: 750px 1000px;
-	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
+	text-align: center;
+	background-color: #080808;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 350px 350px, 350px 350px, 250px 250px, 150px 150px, 199px 199px; 
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, 70px 50px;
+	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s ease alternate infinite, shake 2s ease 3.5s alternate 2;
 	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 10.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
+	font-family: Futura Condensed Medium, Futura, Comic Sans MS, Helvetica, Arial, sans-serif;
+	color: silver;
 }
 
-* {
-	font-family: Futura Condensed Medium, Futura, Comic Sans MS, fantasy;
+.flexcontainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.flexchild {
+	text-align: center;
+	margin: 25px 0;
 }
 
 h1{
-	margin-left: 400px;
+	margin: 0 auto;
 	padding: 10px;
-	position: relative;
+	/*position: relative;*/
 	float: center;
 	/*color: white;*/
 	background-color: rgba(155, 155, 155, .3);
 	/* background: -webkit-radial-gradient(skyblue, skyblue 50%, cadetblue); */
-	display: inline-block;
+	/* display: inline-block;*/
 	clear: both;
 	font-size: 48px;
 	border: 17px inset ghostwhite;
@@ -28,44 +45,54 @@ h1{
 }
 
 #fuck {
--webkit-animation: h1-text-color 1s steps(40,end) alternate infinite;
+	-webkit-animation: h1-text-color 1.5s ease alternate infinite;
 }
 
 #labelname {
 	position: relative;
 	font-weight: bold;
 	padding-top: 100px;
-	margin-top:200px;
-	margin-left: 375px;
+	margin: auto;
 	font-size:32px;
 }
 select {
-	margin: 40px;
-	margin-left: 615px;
-	border: 100px solid #111;
-	border-radius: 25px;
+	margin: auto;
+	border-radius: 250px;
 	background: transparent;
 	width: 235px;
 	height: 60px;
 	padding: 5px 5px 5px 15px;
 	font-size: 20px;
-	border: 7px inset #ccc;
+	border: 9px inset #ccc;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	text-align: center;
-	background-color: rgba(155, 155, 155, .3);
-	background: url(/img/middle_finger.png) 96% / 15% no-repeat #eee;
+	background-color: rgba(185, 185, 185, 1); 
+}
+body {
 }
 select:hover {
-	border: 7px inset #eee;
+	border: .5em inset #eee;
 	color: aliceblue;
-	background: #ccc;
+	background: #bbb;
 }
+
+#menu {
+	text-align: center;
+	padding: auto;
+	margin: auto;
+}
+
+#radius {
+	width: 50px;
+}
+
 input {
-	margin-left:690px;
+	margin: auto;
+	padding: .5em;
 	border:7px inset #ccc;
-	border-radius:15px;
+	border-radius:150px;
 	font-size: 17px;
 	-webkit-appearance:none;
 	-moz-appearance:none;
@@ -77,13 +104,15 @@ input:hover {
 	color:aliceblue;
 	background: #ccc;
 }
-input:onclick {
-
+input:active {
+	border: 7px inset #bbb;
+	color: black;
+	background: #ddd;
 }
+
 #form1{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	display:block;
+	margin: auto;
 }
 
 #lat{
@@ -97,13 +126,13 @@ input:onclick {
 @-webkit-keyframes animated-background {
 	from {
 		background position: 0 50;
-}
-50% {
-	background-position: 0 0;
-}
-to {
-	background-position: 16.25% 11%;
-}
+	}
+	50% {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 16.25% 11%;
+	}
 }
 @-moz-keyframes animated-background {
 	from {
@@ -123,9 +152,9 @@ to {
 	from {
 		color:white;
 		border: 17px inset ghostwhite;
-}
-to {
-	color:black;
-	border: 17px inset slategray;	
-}
+	}
+	to {
+		color:black;
+		border: 17px inset slategray;	
+	}
 }
