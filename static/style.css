@@ -15,7 +15,7 @@ body {
 	color: silver;
 }
 
-.flexcontainer {
+.flex-container {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -24,9 +24,9 @@ body {
 	align-content: center;
 }
 
-.flexchild {
+.flex-child {
 	text-align: center;
-	margin: 25px 0;
+	margin: 1.5em auto; 
 }
 
 h1{
@@ -59,9 +59,7 @@ select {
 	margin: auto;
 	border-radius: 250px;
 	background: transparent;
-	width: 235px;
-	height: 60px;
-	padding: 5px 5px 5px 15px;
+	padding: .4em 1.25em;
 	font-size: 20px;
 	border: 9px inset #ccc;
 	-webkit-appearance: none;
@@ -70,18 +68,11 @@ select {
 	text-align: center;
 	background-color: rgba(185, 185, 185, 1); 
 }
-body {
-}
+
 select:hover {
 	border: .5em inset #eee;
 	color: aliceblue;
 	background: #bbb;
-}
-
-#menu {
-	text-align: center;
-	padding: auto;
-	margin: auto;
 }
 
 #radius {
@@ -90,9 +81,9 @@ select:hover {
 
 input {
 	margin: auto;
-	padding: .5em;
+	padding: .5em .8em;
 	border:7px inset #ccc;
-	border-radius:150px;
+	border-radius:250px;
 	font-size: 17px;
 	-webkit-appearance:none;
 	-moz-appearance:none;
