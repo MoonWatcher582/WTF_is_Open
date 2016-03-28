@@ -1,0 +1,37 @@
+{
+  "name": "wtf_is_open",
+  "version": "1.0.0",
+  "description": "Web app that geolocates your position, then outputs a list of open restaurants in current vicinity",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonWatcher582/WTF_is_Open.git"
+  },
+  "keywords": [
+    "mean",
+    "food",
+    "restauarant"
+  ],
+  "author": "Patrick Wu, Eric Bronner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoonWatcher582/WTF_is_Open/issues"
+  },
+  "homepage": "https://github.com/MoonWatcher582/WTF_is_Open#readme",
+  "devDependencies": {
+    "body-parser": "^1.15.0",
+    "browser-sync": "^2.11.2",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-ruby-sass": "^2.0.6",
+    "morgan": "^1.7.0",
+    "normalize.css": "^4.0.0"
+  }
+}
