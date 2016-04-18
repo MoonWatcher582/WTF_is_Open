@@ -2,12 +2,17 @@ body {
 	text-align: center;
 	background-color: #080808;
 	background-image:
-	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 14px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
 	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-	background-size: 350px 350px, 350px 350px, 250px 250px, 150px 150px, 199px 199px; 
+	background-size: 750px 750px, 750px 750px, 250px 250px, 150px 150px, 199px 199px; 
 	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, 70px 50px;
 	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s ease alternate infinite, shake 2s ease 3.5s alternate 2;
 	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 10.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
@@ -120,6 +125,7 @@ input:active {
 	}
 	50% {
 		background-position: 0 0;
+		transform: perspective(260deg);
 	}
 	to {
 		background-position: 16.25% 11%;
