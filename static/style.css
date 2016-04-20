@@ -1,6 +1,10 @@
+body html {
+	box-sizing: border-box;
+}
+
 body {
 	text-align: center;
-	background-color: #080808;
+	background-color: rgba(0,0,20,1);
 	background-image:
 	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
 	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
@@ -12,7 +16,7 @@ body {
 	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
 	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
 	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-	background-size: 750px 750px, 750px 750px, 250px 250px, 150px 150px, 199px 199px; 
+	background-size: 750px 750px, 750px 750px, 250px 250px, 150px 150px, 220px 220px, 120px 120px, 199px 199px; 
 	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, 70px 50px;
 	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s ease alternate infinite, shake 2s ease 3.5s alternate 2;
 	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 10.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
@@ -77,7 +81,6 @@ select {
 select:hover {
 	border: .5em inset #eee;
 	color: aliceblue;
-	background: #bbb;
 }
 
 #radius {
@@ -98,7 +101,6 @@ input {
 input:hover {
 	border: 7px inset #eee;
 	color:aliceblue;
-	background: #ccc;
 }
 input:active {
 	border: 7px inset #bbb;
@@ -121,14 +123,14 @@ input:active {
 
 @-webkit-keyframes animated-background {
 	from {
-		background position: 0 50;
+		background position: 0 5;
 	}
 	50% {
 		background-position: 0 0;
 		transform: perspective(260deg);
 	}
 	to {
-		background-position: 16.25% 11%;
+		background-position: 1.25% 11%;
 	}
 }
 @-moz-keyframes animated-background {
@@ -138,11 +140,8 @@ input:active {
 	50% {
 		background-position: 0 0;
 	}
-	75% {
-		background-position: 6.25% 81%;
-	}
 	to {
-		background-position: 6.255 100%;
+		background-position: .255 0%;
 	}
 }
 @-webkit-keyframes h1-text-color {
