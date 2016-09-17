@@ -7,3 +7,5 @@ First page, featuring a sort-by option (distance, prominence), a distance input,
 Map/Direction functionality to be added.
 
 Live website available at http://wtfisopen.com
+
+(9/16/16) Note: Google API's have disabled use of certain services over insecure connection, so we are rewriting the server using HTTP/2 protocol. Looking at several options, we decided to move forward with Golang because its http package serves over http2 by default.
