@@ -70,12 +70,15 @@ function handler(select) {
 <body>
 <div class="flex-container">
 	<div class="flex-child">
-		<h1 id="fuck"> WHAT THE FUCK IS OPEN? </h1>
+		<h1 id="fuck">{{.Title}}</h1>
 	</div>
 	<br />
 	<form id="form1" action="/isOpen">
 		<div class="flex-child">
-			<label id='labelname'> Would you like to sort by prominence or distance? </label><br />
+			<label>
+				{{.Text}}
+			</label>
+			<br />
 		</div>
 		<div class="flex-child">
 			<select id-"-menu" name="option1" onchange="handler(this)" required>

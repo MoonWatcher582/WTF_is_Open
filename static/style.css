@@ -16,7 +16,7 @@ body {
 	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
 	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
 	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-	background-size: 750px 750px, 750px 750px, 250px 250px, 150px 150px, 220px 220px, 120px 120px, 199px 199px; 
+	background-size: 750px 750px, 750px 750px, 250px 250px, 150px 150px, 220px 220px, 120px 120px, 199px 199px;
 	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, 70px 50px;
 	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s ease alternate infinite, shake 2s ease 3.5s alternate 2;
 	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 10.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
@@ -35,7 +35,7 @@ body {
 
 .flex-child {
 	text-align: center;
-	margin: 1.5em auto; 
+	margin: 1.5em auto;
 }
 
 h1{
@@ -57,12 +57,15 @@ h1{
 	-webkit-animation: h1-text-color 1.5s ease alternate infinite;
 }
 
-#labelname {
+label{
 	position: relative;
 	font-weight: bold;
 	padding-top: 100px;
 	margin: auto;
 	font-size:32px;
+}
+label:hover {
+	cursor: hover
 }
 select {
 	margin: auto;
@@ -75,7 +78,7 @@ select {
 	-moz-appearance: none;
 	appearance: none;
 	text-align: center;
-	background-color: rgba(185, 185, 185, 1); 
+	background-color: rgba(185, 185, 185, 1);
 }
 
 select:hover {
@@ -151,6 +154,6 @@ input:active {
 	}
 	to {
 		color:black;
-		border: 17px inset slategray;	
+		border: 17px inset slategray;
 	}
 }
