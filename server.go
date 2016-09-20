@@ -3,16 +3,17 @@ package main
 import (
 	//	"encoding/json"
 	"fmt"
+	"github.com/gorilla/mux"
 	"html/template"
 	"io/ioutil"
-	"mime"
+	"log"
 	"net/http"
 )
 
 const (
-	HOME        = "templates/index.html"
-	OPEN        = "templates/isOpen.html"
-	NO_LOCATION = "templates/noLocation.html"
+	HOME        = "src/templates/index.html"
+	OPEN        = "src/templates/isOpen.html"
+	NO_LOCATION = "src/templates/noLocation.html"
 	PORT        = ":8080"
 )
 
@@ -28,12 +29,16 @@ func renderTemplate(w http.ResponseWriter, r *http.Request, msg *Message, path s
 	if err != nil {
 		http.NotFound(w, r)
 	}
-	// problem is here
 	err = t.Execute(w, msg)
 	if err != nil {
 		fmt.Println("Error writing to response writer\n\b", err)
 	}
 	return
+}
+
+// handler for loading static asset requests
+func AssetsHandler(w http.ResponseWriter, r *http.Request) {
+
 }
 
 func mainHandler(w http.ResponseWriter, r *http.Request) {
@@ -50,8 +55,10 @@ func orderHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", mainHandler)
+	router := mux.NewRouter()
+	router.HandleFunc("/static/"+`{path.:\S+}`, AssetsHandler)
+	router.HandleFunc("/", mainHandler)
 	fmt.Println("Listening and serving on port", PORT)
-	http.ListenAndServe(PORT, nil)
+	log.Fatal(http.ListenAndServe(PORT, router))
 	return
 }
