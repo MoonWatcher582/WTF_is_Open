@@ -8,6 +8,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"strconv"
 	"strings"
 )
 
@@ -65,11 +66,27 @@ func mainHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func locationHandler(w http.ResponseWriter, r *http.Request) {
-	body, err := ioutil.ReadAll(r.Body)
-	if err != nil {
-		fmt.Println(err)
+	queries := r.URL.Query()
+	fmt.Println(queries)
+
+	// Key for server apps (with IP locking)
+	//serverKey := "AIzaSyBj6dkQWl1z-Oa2tr2iaix9Gcul3SuQbqE"
+
+	// "Key for browser apps (with referrers)
+	//browserKey := "AIzaSyCp6JnyzRhefAtgJ7h3w0X6PgemLd7uQmk"
+
+	//location := queries["lat"][0] + "." + queries["_long"][0]
+	//types := "bakery|bar|cafe|convenience_store|food|liquor_store|meal_delivery|meal_takeaway|restaurant|shopping_mall"
+
+	if queries["option1"][0] == "prominence" {
+		radiusParam, err := strconv.ParseFloat(queries["radius"][0], 64)
+		if err != nil {
+			fmt.Println("Error retrieving radius", err)
+		}
+		radiusParam *= 1609.344
+		radius := strconv.FormatFloat(radiusParam, 'E', -1, 64)
+		fmt.Println(radius)
 	}
-	fmt.Println(body)
 }
 
 func main() {
