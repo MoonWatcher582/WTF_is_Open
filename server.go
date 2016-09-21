@@ -48,7 +48,7 @@ func AssetsHandler(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/css; charset=utf-8")
 		w.Write(style)
 	} else if strings.Contains(path, "/js") {
-		js, err := ioutil.ReadFile("src/static/style.css")
+		js, err := ioutil.ReadFile("src/js/app.js")
 		if err != nil {
 			fmt.Println("Error handling JS,", err)
 		}
