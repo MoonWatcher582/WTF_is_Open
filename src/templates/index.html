@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="static/wtfio-logo.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>What the Fuck is Open?</title>
+
+	<script src="/js/app.js" type="application/javascript"></script>
+	<link rel="stylesheet" href="/static/style.css" type="text/css"/>
+</head>
+<body>
+	<div class="flex-container">
+		<div class="flex-child">
+			<h1 id="fuck">{{.Title}}</h1>
+		</div>
+		<br/>
+		<form id="form1" action="/isOpen">
+			<div class="flex-child">
+				<label>
+					{{.Text}}
+				</label>
+				<br/>
+			</div>
+			<div class="flex-child">
+				<select name="option1" onchange="handler(this)" required>
+					<option value="">
+						Fucking Pick a Thing
+					</option>
+					<option value="prominence">
+						Proximity
+					</option>
+					<option value="distance">
+						All Options
+					</option>
+				</select><br/>
+			</div>
+			<div id='dynamicAdding' class="flex-child">
+				<span id='text'></span>
+			</div>
+			<div class="flex-child">
+				<input type='submit' id='btn' value='Submit'/>
+			</div>
+			<input type='text' id='lat' name='lat'/>
+			<input type='text' id='long' name='long'/>
+		</form>
+	</div>
+</div>
+</body>
+</html>

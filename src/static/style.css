@@ -1,0 +1,159 @@
+body html {
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	background-color: rgba(0,0,20,1);
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 14px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+	radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 750px 750px, 750px 750px, 250px 250px, 150px 150px, 220px 220px, 120px 120px, 199px 199px;
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, 70px 50px;
+	-moz-animation: background-transition 8s linear 7.5s, animated-background 11.09s ease alternate infinite, shake 2s ease 3.5s alternate 2;
+	-webkit-animation: background-transition 8s cubic-bezier(0.1,0.1,1,0.7), 7.5s, animated-background 10.09s linear alternate infinite, shake 2s ease 3.5s alternate 2;
+	font-family: Futura Condensed Medium, Futura, Comic Sans MS, Helvetica, Arial, sans-serif;
+	color: silver;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.flex-child {
+	text-align: center;
+	margin: 1.5em auto;
+}
+
+h1{
+	margin: 0 auto;
+	padding: 10px;
+	/*position: relative;*/
+	float: center;
+	/*color: white;*/
+	background-color: rgba(155, 155, 155, .3);
+	/* background: -webkit-radial-gradient(skyblue, skyblue 50%, cadetblue); */
+	/* display: inline-block;*/
+	clear: both;
+	font-size: 48px;
+	border: 17px inset ghostwhite;
+	border-radius: 500px;
+}
+
+#fuck {
+	-webkit-animation: h1-text-color 1.5s ease alternate infinite;
+}
+
+label{
+	position: relative;
+	font-weight: bold;
+	padding-top: 100px;
+	margin: auto;
+	font-size:32px;
+}
+label:hover {
+	cursor: hover
+}
+select {
+	margin: auto;
+	border-radius: 250px;
+	background: transparent;
+	padding: .4em 1.25em;
+	font-size: 20px;
+	border: 9px inset #ccc;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	text-align: center;
+	background-color: rgba(185, 185, 185, 1);
+}
+
+select:hover {
+	border: .5em inset #eee;
+	color: aliceblue;
+}
+
+#radius {
+	width: 50px;
+}
+
+input {
+	margin: auto;
+	padding: .5em .8em;
+	border:7px inset #ccc;
+	border-radius:250px;
+	font-size: 17px;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	background-color: rgba(185, 185, 185, 1);
+	appearance:none;
+}
+input:hover {
+	border: 7px inset #eee;
+	color:aliceblue;
+}
+input:active {
+	border: 7px inset #bbb;
+	color: black;
+	background: #ddd;
+}
+
+#form1{
+	display:block;
+	margin: auto;
+}
+
+#lat{
+	visibility: hidden;
+}
+
+#long{
+	visibility: hidden;
+}
+
+@-webkit-keyframes animated-background {
+	from {
+		background position: 0 5;
+	}
+	50% {
+		background-position: 0 0;
+		transform: perspective(260deg);
+	}
+	to {
+		background-position: 1.25% 11%;
+	}
+}
+@-moz-keyframes animated-background {
+	from {
+		background position: 0 50;
+	}
+	50% {
+		background-position: 0 0;
+	}
+	to {
+		background-position: .255 0%;
+	}
+}
+@-webkit-keyframes h1-text-color {
+	from {
+		color:white;
+		border: 17px inset ghostwhite;
+	}
+	to {
+		color:black;
+		border: 17px inset slategray;
+	}
+}
