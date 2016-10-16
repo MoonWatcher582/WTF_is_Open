@@ -43,7 +43,7 @@ def isOpen():
 	return render_template('isOpen.html', places=places, lat=lat, _long=_long)
 
 if __name__ == '__main__':
-	app.run('0.0.0.0', port=8080, debug=True)
+	app.run('0.0.0.0', port=8000, debug=True)
 
 #Notes to self on API args:
 #key is Google API auth. key
